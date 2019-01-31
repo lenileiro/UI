@@ -1,0 +1,49 @@
+.title-detail{
+    margin-top:20px; 
+    padding:0.35em 20px;
+    font-family: roboto-thin;
+    font-size: 36px;
+}
+.page-detail{
+    margin-top:20px; 
+    padding:0.35em 20px;
+    font-family: roboto-thin;
+    color:white; 
+    text-align: center;
+    font-size: 36px;
+}
+span{
+    padding:0.35em 20px;
+}
+
+.color-gradient{
+    height: 100vh;
+    background: linear-gradient(to right top, #34e89e, #0f3443)
+}
+.login-extra{
+    border-radius: 5px;
+    padding: 20px;
+}
+button,.btn{
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid black;
+    margin-top:10px; 
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:300;
+    color:black;
+    text-align:center;
+    transition: all 0.2s;
+    }
+button:hover,a:hover{
+    color:#FFFFFF;
+    background-color:black;
+}
+a{
+    color:black;
+    text-align:center;
+    transition: all 0.2s;
+}
+    
