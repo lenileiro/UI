@@ -21,10 +21,10 @@ span.onclick = function() {
   }
 function newRoute(usertype) {
     if (usertype == 'User') {
-         window.location.assign("./index.html")
+         window.location.assign("./user/index.html")
     }else if (usertype == 'Admin') {
-        window.location.assign("./index.html")
+        window.location.assign("./admin/index.html")
     } else if (usertype == 'Politician') {
-        window.location.assign("./index.html")
+        window.location.assign("./politician/index.html")
     }
 }
