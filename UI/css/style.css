@@ -4,6 +4,9 @@
     font-family: roboto-thin;
     font-size: 36px;
 }
+.title-petition{
+  margin-top:20px; 
+}
 .page-detail{
     margin-top:20px; 
     padding:0.35em 20px;
