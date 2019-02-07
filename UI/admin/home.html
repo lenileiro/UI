@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/list.css">
+    <link rel="stylesheet" href="../css/modals.css">
+    <title>Admin</title>
+</head>
+<body>
+    <header class="header">
+        <h2 class="logo">Admin</h2>
+        <input type="checkbox" id="chk">
+        <label for="chk">
+            <!--menu icon-->
+            <div class="menu-icon">
+                <div class="toggle-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </label>
+
+        <nav class="menu">
+            <a href="./index.html">Home</a>
+            <a href="./register.html">Register office</a>
+            <a href="../index.html">Logout</a>
+            <input type="checkbox" id="chk">
+            <label for="chk">
+                <!--close icon-->
+            <span class="close-icon">&times;</span>
+            </label>
+        </nav>
+    </header> 
+    <div class="content">
+        <ul>
+            <li>Political party A
+                <div class="list-btn">
+                    <button class="btn-primary">edit</button>
+                    <button onclick="open_modal()" class="btn-danger">delete</button>
+                </div>
+            </li>
+            <li>Political party B
+                <div class="list-btn">
+                    <button class="btn-primary">edit</button>
+                    <button onclick="open_modal()" class="btn-danger">delete</button>
+                </div>
+            </li>
+            <li>Political party C
+                <div class="list-btn">
+                    <button class="btn-primary">edit</button>
+                    <button onclick="open_modal()" class="btn-danger">delete</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Are you sure you want to delete political party?</h3>
+        <button onclick="confirm()">confirm</button>
+        <button onclick="cancel()">cancel</button>
+    </div> 
+    <script src="../js/box.js"></script>  
+</body>
+</html>
