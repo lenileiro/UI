@@ -4,29 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Admin</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/forms.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/list.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <title>Admin</title>
 </head>
 <body>
-    <nav>
+    <header class="header">
+        <h2 class="logo">Admin</h2>
+        <input type="checkbox" id="chk">
+        <label for="chk">
+            <!--menu icon-->
+            <div class="menu-icon">
+                <div class="toggle-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </label>
+
+        <nav class="menu">
+            <a href="./index.html">Home</a>
+            <a href="./register.html">Register office</a>
+            <a href="../index.html">Logout</a>
+            <input type="checkbox" id="chk">
+            <label for="chk">
+                <!--close icon-->
+            <span class="close-icon">&times;</span>
+            </label>
+        </nav>
+    </header> 
+    <div class="content">
         <ul>
-            <li class="li"><a href="./edit.html">Edit Party</a></li>
-            <li class="active li"><a href="./index.html">Register Govt Office</a></li>
-            <li class="li"><a href="./register.html">Register Party</a></li>
-            <li class="li"><a href="./delete.html">Delete Party</a></li>
+            <li>Political party A
+                <div class="list-btn">
+                    <button class="btn-primary">edit</button>
+                    <button onclick="open_modal()" class="btn-danger">delete</button>
+                </div>
+            </li>
+            <li>Political party B
+                <div class="list-btn">
+                    <button class="btn-primary">edit</button>
+                    <button onclick="open_modal()" class="btn-danger">delete</button>
+                </div>
+            </li>
+            <li>Political party C
+                <div class="list-btn">
+                    <button class="btn-primary">edit</button>
+                    <button onclick="open_modal()" class="btn-danger">delete</button>
+                </div>
+            </li>
         </ul>
-    </nav>
-    <div class="row">
-        <div class="col-2"></div>
-        <main class="col-9">
-            <form>
-                <label class="label" for="input">Name</label>
-                <input class="input" type="text" id="name" placeholder="name" required>
-                <button>Register Government Office</button>
-                </form>   
-        </main>
-    <div class="col-2"></div>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Are you sure you want to delete political party?</h3>
+        <button onclick="confirm()">confirm</button>
+        <button onclick="cancel()">cancel</button>
+    </div> 
+    <script src="../js/modal.js"></script>  
 </body>
 </html>

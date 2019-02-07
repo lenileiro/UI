@@ -10,6 +10,13 @@ window.onclick = function(event) {
       modal.style.display = "none";
     }
   }
+
+function cancel(){
+    modal.style.display = "none";
+} 
+function confirm(){
+    modal.style.display = "none";
+}
 function open_modal(){
     modal.style.display = "block";
   }
