@@ -1,37 +1,29 @@
 var modal = document.getElementById('myModal');
-function close_modal(){
-    var e = document.getElementById("ddlViewBy");
-    var strUser = e.options[e.selectedIndex].value;
-    modal.style.display = "none";
-    newRoute(strUser)
-}   
+  
 window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
     }
   }
 
-function cancel(){
-    modal.style.display = "none";
-} 
-function confirm(){
-    modal.style.display = "none";
-}
-function open_modal(){
-    modal.style.display = "block";
-  }
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
   }
-function newRoute(usertype) {
-    if (usertype == 'User') {
-         window.location.assign("./user/index.html")
-    }else if (usertype == 'Admin') {
-        window.location.assign("./admin/index.html")
-    } else if (usertype == 'Politician') {
-        window.location.assign("./politician/index.html")
-    }
+
+function open_modal(){
+  modal.style.display = "block";
 }
+
+// your form
+var form = document.getElementById("form");
+
+function form_open_modal(event){
+  event.preventDefault();
+  modal.style.display = "block";
+}
+
+// attach event listener
+form.addEventListener("submit", form_open_modal, true);

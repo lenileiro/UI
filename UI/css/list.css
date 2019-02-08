@@ -35,22 +35,3 @@ ul li:hover {
     margin: 10px 0;
 }
 
-/*button styling*/
-button,.btn{
-    display:inline-block;
-    padding:0.35em 1.2em;
-    border:0.1em solid black;
-    margin-top:10px; 
-    border-radius:0.12em;
-    box-sizing: border-box;
-    text-decoration:none;
-    font-weight:300;
-    color:black;
-    text-align:center;
-    transition: all 0.2s;
-}
-
-button:hover,a:hover{
-    color:#FFFFFF;
-    background-color:black;
-}
