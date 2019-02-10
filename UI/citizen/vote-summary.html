@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/list.css">
+    <link rel="stylesheet" href="../css/modals.css">
+    <title>Citizen</title>
+</head>
+<body>
+    <header class="header">
+        <h2 class="logo">Citizen</h2>
+        <input type="checkbox" id="chk">
+        <label for="chk">
+            <!--menu icon-->
+            <div class="menu-icon">
+                <div class="toggle-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </label>
+
+        <nav class="menu">
+            <a href="./index.html">Vote</a>
+            <a href="./vote-summary.html">vote summary</a>
+            <a href="./political-parties.html">Political party</a>
+            <a href="./politcal-office.html">Political Office</a>
+            <a href="../index.html">Logout</a>
+            <input type="checkbox" id="chk">
+            <label for="chk">
+                <!--close icon-->
+            <span class="close-icon">&times;</span>
+            </label>
+        </nav>
+    </header> 
+    <div class="content">
+            <h3>Election Results</h3>
+            <ul>
+                <li>
+                    <h5>Presidential Candidate</h5>
+                    <span>Candidate 1</span>
+                </li>
+                <li>
+                    <h5>Governatorial Candidate</h5>
+                    <span>Candidate 2</span>
+                </li>
+                <li>
+                    <h5>Women Representative</h5>
+                    <span>Candidate 3</span>
+                </li>
+            </ul>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Are you sure you want to delete political party?</h3>
+        <button onclick="confirm()">confirm</button>
+        <button onclick="cancel()">cancel</button>
+    </div> 
+    <script src="../js/box.js"></script> 
+    <script src="../js/routes.js"></script> 
+</body>
+</html>
