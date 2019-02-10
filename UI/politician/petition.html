@@ -4,9 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <link rel="stylesheet" href="../css/modals.css">
+    <title>Politician</title>
 </head>
 <body>
-    
+    <header class="header">
+        <h2 class="logo">Politician</h2>
+        <input type="checkbox" id="chk">
+        <label for="chk">
+            <!--menu icon-->
+            <div class="menu-icon">
+                <div class="toggle-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </label>
+
+        <nav class="menu">
+            <a href="./index.html">vie</a>
+            <a href="./petition.html">create petition</a>
+            <a href="../index.html">Logout</a>
+            <input type="checkbox" id="chk">
+            <label for="chk">
+                <!--close icon-->
+            <span class="close-icon">&times;</span>
+            </label>
+        </nav>
+    </header> 
+    <div class="content">
+        <center>
+           <h3 class="title-petition">Fill the petition form</h3>
+            <form>
+                <label class="label" for="input">name</label>
+                <input class="input" type="text" id="name" placeholder="name" required>
+                <label class="label" for="input">office</label>
+                <input class="input" type="text" id="office" placeholder="office" required>
+                <button onclick="open_modal()">create petition</button>
+            </form>
+        </center>  
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>click confirm to send petition</h3>
+        <button onclick="confirm()">confirm</button>
+        <button onclick="cancel()">cancel</button>
+    </div> 
+    <script src="../js/box.js"></script>
+    <script src="../js/routes.js"></script> 
 </body>
 </html>
