@@ -39,15 +39,12 @@
     </header> 
     <div class="content">
         <center>
-        <h3>Register: Political Party</h3>
+        <h3>Register: Political Office</h3>
             <form id="form">
-                  <label class="label" for="input">Name</label>
+                <label class="label" for="input">type</label>
+                <input class="input" type="text" id="type"  placeholder="type" >
+                <label class="label" for="input">Name</label>
                 <input class="input" type="text" id="name"  placeholder="name" >
-                <label class="label" for="input">Address</label>
-                <input class="input" type="text" id="address"  placeholder="address" >
-                <label class="label" for="input">logourl</label>
-                <input class="input" type="text" id="logourl"  placeholder="logourl" >
-
                <button onclick="form_open_modal()">Save Changes</button>
             </form>
         </center>  
@@ -57,7 +54,7 @@
         <!-- Modal content -->
         <div class="modal-content">
         <span class="close">&times;</span>
-        <h3>Are you sure you want register political party?</h3>
+        <h3>Are you sure you want register political office?</h3>
         <button onclick="goto_admin_home()">confirm</button>
         <button onclick="cancel()">cancel</button>
     </div> 

@@ -8,6 +8,9 @@
 .content {
   padding: 0 20px;
 }
+.content h3 {
+  margin-top: 20px;
+}
 .row {
     display: flex;
     flex-wrap: wrap;
