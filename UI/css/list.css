@@ -26,11 +26,6 @@ ul li:nth-child(odd) {
     background: #f9f9f9;
 }
 
-/* Darker background-color on hover */
-ul li:hover {
-    background: #ddd;
-}
-
 .list-btn {
     margin: 10px 0;
 }
