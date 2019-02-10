@@ -91,7 +91,11 @@ button:hover,a:hover{
     color:#FFFFFF;
     background-color:black;
 }
-
+a{
+    color:black;
+    text-align:center;
+    transition: all 0.2s;
+}
 /*media screen*/
 
 @media screen and (max-width:800px) {
