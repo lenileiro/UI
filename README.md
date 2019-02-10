@@ -1,4 +1,4 @@
-# politico
+# politico UI
 These is a site where
 1. Users can sign up.
 2. Users can login.
@@ -7,3 +7,5 @@ These is a site where
 5. Admin (electoral body) can create different political offices.
 6. Users can vote for only one politician per political office.
 7. Users can see the results of election.
+
+[visit site](https://lenileiro.github.io/politico/UI/index.html)
