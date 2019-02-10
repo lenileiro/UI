@@ -4,7 +4,12 @@ function goto_admin_home(){
     modal.style.display = "none";
     admin_routes('index')
   }
-  function goto_admin_edit(){
+
+function goto_vote_summary(){
+    modal.style.display = "none";
+    window.location.assign("./vote-summary.html")
+}  
+function goto_admin_edit(){
     modal.style.display = "none";
     admin_routes('edit')
   }

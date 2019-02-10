@@ -12,15 +12,15 @@ input{
     border: 0px 4px 0px 4px;
     padding: 1px 6px 1px 6px;
   }
-  input:focus{
+input:focus{
     border-style: solid;
     border-color: black;
   }
-  .label{
+.label{
     display: inline-block;
-    
     padding:0.35em 0;
     color: black;
     margin-bottom: 0.25em;
   }
+
   

@@ -11,6 +11,9 @@
 .content h3 {
   margin-top: 20px;
 }
+center h3{
+  margin-bottom: 20px;
+}
 .row {
     display: flex;
     flex-wrap: wrap;

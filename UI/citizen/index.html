@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/list.css">
+    <link rel="stylesheet" href="../css/modals.css">
+    <title>Citizen</title>
+</head>
+<body>
+    <header class="header">
+        <h2 class="logo">Citizen</h2>
+        <input type="checkbox" id="chk">
+        <label for="chk">
+            <!--menu icon-->
+            <div class="menu-icon">
+                <div class="toggle-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </label>
+
+        <nav class="menu">
+            <a href="./index.html">Vote</a>
+            <a href="./vote-summary.html">vote summary</a>
+            <a href="./political-parties.html">Political party</a>
+            <a href="./politcal-office.html">Political Office</a>
+            <a href="../index.html">Logout</a>
+            <input type="checkbox" id="chk">
+            <label for="chk">
+                <!--close icon-->
+            <span class="close-icon">&times;</span>
+            </label>
+        </nav>
+    </header> 
+    <div class="content">
+        <center>
+            <h3>Choose Candidate</h3>
+            <div>
+                <p>Presidential Candidate:</p>
+                <br />
+                <div>
+                    <input
+                        type="radio"
+                        name="Presidential Candidate"
+                        value="Candidate 1"
+                    />Candidate 1<br />
+                    <input
+                        type="radio"
+                        name="Presidential Candidate"
+                        value="Candidate 2"
+                    />Candidate 2<br />
+                    <input
+                        type="radio"
+                        name="Presidential Candidate"
+                        value="Candidate 3"
+                    />Candidate 3<br />
+                    </div>
+                <br />
+        
+                <p>Governatorial Candidate:</p>
+                <br />
+                <div>
+                  <input
+                    type="radio"
+                    name="Governatorial Candidate"
+                    value="Candidate 1"
+                    />Candidate 1<br />
+                  <input
+                    type="radio"
+                    name="Governatorial Candidate"
+                    value="Candidate 2"
+                    />Candidate 2<br />
+                  <input
+                    type="radio"
+                    name="Governatorial Candidate"
+                    value="Candidate 3"
+                    />Candidate 3<br />
+                </div>
+                <br />
+                <p>Women Representative:</p>
+                <br />
+                <div>
+                  <input
+                    type="radio"
+                    name="Women Representative"
+                    value="Candidate 1"
+                    />Candidate 1<br />
+                  <input
+                    type="radio"
+                    name="Women Representative"
+                    value="Candidate 2"
+                    />Candidate 2<br />
+                  <input
+                    type="radio"
+                    name="Women Representative"
+                    value="Candidate 3"
+                    />Candidate 3<br />
+                </div>
+                <button onclick="open_modal()">Cast Vote</button>
+        </center>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Click Comfirm to finish vote execises</h3>
+        <button onclick="goto_vote_summary()">confirm</button>
+        <button onclick="cancel()">cancel</button>
+    </div> 
+    <script src="../js/box.js"></script> 
+    <script src="../js/routes.js"></script> 
+</body>
+</html>
