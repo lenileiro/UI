@@ -2,20 +2,18 @@ form {
     border-radius: 5px;
     padding: 20px;
   }
-input{
+input[type='text'],input[type='email'],input[type='password']{
     display: block;
     width: 90%;    
     cursor: pointer;
     background-color: lightyellow;
     border-style: solid;
-    border-color: lightyellow;
-    border: 0px 4px 0px 4px;
-    padding: 1px 6px 1px 6px;
-  }
-input:focus{
-    border-style: solid;
     border-color: black;
+    border: 0px 4px 0px 4px;
+    padding: 4px 6px 4px 6px;
+    margin-bottom: 10px;
   }
+
 .label{
     display: inline-block;
     padding:0.35em 0;
