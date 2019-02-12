@@ -39,27 +39,16 @@
     <div class="content">
         <center>
             <h3>Choose Office to Vie as Candidate</h3>
-            <div>
                 <br />
-                <div>
-                    <input
-                        type="radio"
-                        name="President"
-                        value="President"
-                    />President<br />
-                    <input
-                        type="radio"
-                        name="Governor"
-                        value="Governor"
-                    />Governor
-                    <br />
-                    <input
-                        type="radio"
-                        name="Woman Representative"
-                        value="Woman Representative"
-                    />Woman Representative<br />
-                    </div>
-                </div>
+                <select>
+                    <option value="">President</option>
+                    <option value="">Senator</option>
+                    <option value="">Governor</option>
+                    <option value="">Mp</option>
+                    <option value="">woman Representative</option>
+                </select>
+                <br/>
+                <br/>
                 <button onclick="open_modal()">Vie</button>
         </center>
     </div>
@@ -68,7 +57,7 @@
         <!-- Modal content -->
         <div class="modal-content">
         <span class="close">&times;</span>
-        <h3>Click Comfirm to fregister as a Candidate</h3>
+        <h3>Click Comfirm to register as a Candidate</h3>
         <button onclick="confirm()">confirm</button>
         <button onclick="cancel()">cancel</button>
     </div> 

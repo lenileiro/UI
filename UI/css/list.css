@@ -30,3 +30,6 @@ ul li:nth-child(odd) {
     margin: 10px 0;
 }
 
+.radio {
+padding: 10px;
+}
